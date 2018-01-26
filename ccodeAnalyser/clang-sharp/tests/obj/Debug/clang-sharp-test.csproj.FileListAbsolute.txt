@@ -1,0 +1,7 @@
+D:\Tool\bin\cparser\clang-sharp-test.dll
+D:\Tool\bin\cparser\clang-sharp-test.pdb
+D:\Tool\Myprojects\clang-sharp\tests\obj\Debug\clang-sharp-test.csprojResolveAssemblyReference.cache
+D:\Tool\Myprojects\clang-sharp\tests\obj\Debug\tests.Properties.Resources.resources
+D:\Tool\Myprojects\clang-sharp\tests\obj\Debug\clang-sharp-test.csproj.GenerateResource.Cache
+D:\Tool\Myprojects\clang-sharp\tests\obj\Debug\clang-sharp-test.dll
+D:\Tool\Myprojects\clang-sharp\tests\obj\Debug\clang-sharp-test.pdb
