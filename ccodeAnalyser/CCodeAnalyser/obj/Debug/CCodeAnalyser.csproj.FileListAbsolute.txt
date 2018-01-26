@@ -20,14 +20,3 @@ C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\CCodeAnalyser\bin\Debug\Clang
 C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\CCodeAnalyser\obj\Debug\CCodeAnalyser.csprojResolveAssemblyReference.cache
 C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\CCodeAnalyser\obj\Debug\CCodeAnalyser.dll
 C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\CCodeAnalyser\obj\Debug\CCodeAnalyser.pdb
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\CCodeAnalyser\bin\Debug\CCodeAnalyser.dll
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\CCodeAnalyser\bin\Debug\CCodeAnalyser.pdb
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\CCodeAnalyser\bin\Debug\CCodeFramework.dll
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\CCodeAnalyser\bin\Debug\CCodeTypes.dll
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\CCodeAnalyser\bin\Debug\ClangSharp.dll
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\CCodeAnalyser\bin\Debug\CCodeFramework.pdb
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\CCodeAnalyser\bin\Debug\CCodeTypes.pdb
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\CCodeAnalyser\bin\Debug\ClangSharp.pdb
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\CCodeAnalyser\obj\Debug\CCodeAnalyser.csprojResolveAssemblyReference.cache
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\CCodeAnalyser\obj\Debug\CCodeAnalyser.dll
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\CCodeAnalyser\obj\Debug\CCodeAnalyser.pdb

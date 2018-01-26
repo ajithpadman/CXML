@@ -10,22 +10,34 @@ namespace CCodeTypes.Xml
         CXml _Model;
         public CxmlIDDecorator(CXml model) : base(model)
         {
-            UpdateID(model);
+            if(model!= null)
+            {
+                UpdateID(model);
+            }
+            
             _Model = model;
         }
         public override void Serialise(string path)
         {
-            _Model.Serialise(path);
+            if(_Model!= null)
+            {
+                _Model.Serialise(path);
+            }
+            
         }
         public override void Deserialise(string CumlPath)
         {
-            _Model.Deserialise(CumlPath);
+            if(_Model!= null)
+            {
+                _Model.Deserialise(CumlPath);
+            }
+            
         }
         /// <summary>
         /// Update he IDs corresponding to correct properties
         /// </summary>
         /// <param name="model"></param>
-        private void UpdateID(CXml model)
+        protected virtual void UpdateID(CXml model)
         {
             foreach(DataType type in model.DataTypes)
             {
@@ -50,7 +62,7 @@ namespace CCodeTypes.Xml
         /// <param name="data"></param>
         /// <param name="model"></param>
         /// <returns></returns>
-        bool findIfSelfReference(DataType parent,DataType data, CXml model)
+        protected bool findIfSelfReference(DataType parent,DataType data, CXml model)
         {
             bool result = false;
            
@@ -97,7 +109,7 @@ namespace CCodeTypes.Xml
             }
             return result;
         }
-        private void remapDataTypeNewID(string newID,string oldID,CXml model)
+        protected void remapDataTypeNewID(string newID,string oldID,CXml model)
         {
             var types = model.DataTypes.Where(x => x.pointToIDref == oldID).ToList();
             types.ForEach(x => x.pointToIDref = newID);
@@ -123,7 +135,7 @@ namespace CCodeTypes.Xml
             }
             
         }
-        private void remmapOperationID(string newID,string oldID,CXml model)
+        protected void remmapOperationID(string newID,string oldID,CXml model)
         {
             foreach (Function f in model.Functions)
             {
@@ -138,7 +150,7 @@ namespace CCodeTypes.Xml
         /// <param name="type"></param>
         /// <param name="model"></param>
         /// <returns></returns>
-        private string CalculateDataTypeID(DataType type , CXml model)
+        protected string CalculateDataTypeID(DataType type , CXml model)
         {
             string Properties = type.Name+type.Qualifier.ToString()+type.StorageClass ; 
             foreach(Variable v in type.Attributes)
@@ -164,6 +176,14 @@ namespace CCodeTypes.Xml
                 }
 
             }
+            var pointTo = model.DataTypes.Where(x => x.ID == type.pointToIDref);
+            if (pointTo != null)
+            {
+                foreach (DataType pontType in pointTo)
+                {
+                    Properties += CalculateDataTypeID(pontType, model);
+                }
+            }
             return Util.Util.ComputeMd5ForString(Properties);
             
         }
@@ -173,9 +193,9 @@ namespace CCodeTypes.Xml
         /// <param name="var"></param>
         /// <param name="model"></param>
         /// <returns></returns>
-        private string CalculateVariableID(Variable var,CXml model)
+        protected string CalculateVariableID(Variable var,CXml model)
         {
-            string Properties = var.Name + System.IO.Path.GetFileName(var.File);
+            string Properties = var.Name;
             var type = model.DataTypes.Where(x => x.ID == var.TypeIDref);
             if (type != null)
             {
@@ -192,7 +212,7 @@ namespace CCodeTypes.Xml
         /// <param name="op"></param>
         /// <param name="model"></param>
         /// <returns></returns>
-        private string CalculateOperatrionID(Function op,CXml model)
+        protected string CalculateOperatrionID(Function op,CXml model)
         {
             string Properties = op.Name+op.StorageClass+op.IsDefinition.ToString();
             var type = model.DataTypes.Where(x => x.ID == op.ReturnIDRef);
@@ -209,27 +229,29 @@ namespace CCodeTypes.Xml
             }
             foreach(string cfString in op.CalledFunctions)
             {
-                var calledList = model.Functions.Where(x => x.ID == cfString);
-                if (calledList != null)
-                {
-                    Function cf = calledList.ElementAt(0);
-                    if (cf != null)
+                
+                    var calledList = model.Functions.Where(x => x.ID == cfString);
+                    if (calledList != null)
                     {
-                        Properties += cf.Name;
-                        var cfret = model.DataTypes.Where(x => x.ID == cf.ReturnIDRef);
-                        if (cfret != null)
+                        Function cf = calledList.ElementAt(0);
+                        if (cf != null)
                         {
-                            if (cfret.Count() > 0)
+                            Properties += cf.Name;
+                            var cfret = model.DataTypes.Where(x => x.ID == cf.ReturnIDRef);
+                            if (cfret != null)
                             {
-                                Properties += cfret.ElementAt(0).Name;
+                                if (cfret.Count() > 0)
+                                {
+                                    Properties += cfret.ElementAt(0).Name;
+                                }
+                            }
+                            foreach (Variable v in cf.Parameters)
+                            {
+                                Properties += CalculateVariableID(v, model);
                             }
                         }
-                        foreach (Variable v in cf.Parameters)
-                        {
-                            Properties += CalculateVariableID(v, model);
-                        }
                     }
-                }
+               
             }
             return Util.Util.ComputeMd5ForString(Properties);
         }

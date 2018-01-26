@@ -15,8 +15,3 @@ C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\clang-sharp\bin\Debug\ClangSh
 C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\clang-sharp\bin\Debug\ClangSharp.pdb
 C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\clang-sharp\obj\Debug\ClangSharp.dll
 C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\clang-sharp\obj\Debug\ClangSharp.pdb
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\clang-sharp\bin\Debug\ClangSharp.dll
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\clang-sharp\bin\Debug\ClangSharp.pdb
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\clang-sharp\obj\Debug\ClangSharp.dll
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\clang-sharp\obj\Debug\ClangSharp.pdb
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\clang-sharp\obj\Debug\clang-sharp.csprojResolveAssemblyReference.cache

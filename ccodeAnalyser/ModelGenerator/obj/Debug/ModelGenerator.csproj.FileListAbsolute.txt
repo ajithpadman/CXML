@@ -24,16 +24,3 @@ C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\ModelGenerator\bin\Debug\Clan
 C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\ModelGenerator\obj\Debug\ModelGenerator.csprojResolveAssemblyReference.cache
 C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\ModelGenerator\obj\Debug\ModelGenerator.exe
 C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\ModelGenerator\obj\Debug\ModelGenerator.pdb
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\ModelGenerator\obj\Debug\ModelGenerator.exe
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\ModelGenerator\obj\Debug\ModelGenerator.pdb
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\ModelGenerator\bin\Debug\ModelGenerator.exe
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\ModelGenerator\bin\Debug\ModelGenerator.pdb
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\ModelGenerator\bin\Debug\CCodeAnalyser.dll
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\ModelGenerator\bin\Debug\CCodeFramework.dll
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\ModelGenerator\bin\Debug\CCodeTypes.dll
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\ModelGenerator\bin\Debug\ClangSharp.dll
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\ModelGenerator\bin\Debug\CCodeAnalyser.pdb
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\ModelGenerator\bin\Debug\CCodeFramework.pdb
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\ModelGenerator\bin\Debug\CCodeTypes.pdb
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\ModelGenerator\bin\Debug\ClangSharp.pdb
-D:\Projects\Diamler\Tools\ReEngTool\ccodeAnalyser\ModelGenerator\obj\Debug\ModelGenerator.csprojResolveAssemblyReference.cache
