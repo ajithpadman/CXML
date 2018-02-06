@@ -34,11 +34,11 @@ namespace CCodeTypes.Types
 		/// <summary>
 		/// qualifier of the type
 		/// </summary>
-		public Qualifier Qualifier;
+		public Qualifier Qualifier = Qualifier.INVALID;
 		/// <summary>
 		/// Storage class of the type
 		/// </summary>
-		public StorageClass StorageClass;
+		public StorageClass StorageClass = StorageClass.Invalid;
 
 		public CDataType(){
             Children = new List<CElement>();

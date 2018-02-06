@@ -1,7 +1,0 @@
-D:\Tool\Myprojects\ccodeAnalyser\CCodeSchema\bin\Debug\CCodeSchema.dll
-D:\Tool\Myprojects\ccodeAnalyser\CCodeSchema\bin\Debug\CCodeSchema.pdb
-D:\Tool\Myprojects\ccodeAnalyser\CCodeSchema\bin\Debug\ClangSharp.dll
-D:\Tool\Myprojects\ccodeAnalyser\CCodeSchema\bin\Debug\ClangSharp.pdb
-D:\Tool\Myprojects\ccodeAnalyser\CCodeSchema\obj\Debug\CCodeSchema.csprojResolveAssemblyReference.cache
-D:\Tool\Myprojects\ccodeAnalyser\CCodeSchema\obj\Debug\CCodeSchema.dll
-D:\Tool\Myprojects\ccodeAnalyser\CCodeSchema\obj\Debug\CCodeSchema.pdb

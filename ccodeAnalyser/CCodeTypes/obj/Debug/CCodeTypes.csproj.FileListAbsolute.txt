@@ -1,8 +1,0 @@
-D:\Tool\Myprojects\ccodeAnalyser\CCodeTypes\bin\Debug\CCodeTypes.dll
-D:\Tool\Myprojects\ccodeAnalyser\CCodeTypes\bin\Debug\CCodeTypes.pdb
-D:\Tool\Myprojects\ccodeAnalyser\CCodeTypes\obj\Debug\CCodeTypes.dll
-D:\Tool\Myprojects\ccodeAnalyser\CCodeTypes\obj\Debug\CCodeTypes.pdb
-C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\CCodeTypes\bin\Debug\CCodeTypes.dll
-C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\CCodeTypes\bin\Debug\CCodeTypes.pdb
-C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\CCodeTypes\obj\Debug\CCodeTypes.dll
-C:\Users\ajith.padman\Desktop\Source\ccodeAnalyser\CCodeTypes\obj\Debug\CCodeTypes.pdb
